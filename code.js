@@ -4,5 +4,5 @@ if (true) {
     lizardBase.push("http://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_lizards.jpg");
     // lizardBase.push("");
     
-	document.getElementByID("lizhard").src = lizardBase[parseInt(lizardBase.length * Math.random())];
+	document.getElementById("lizhard").src = lizardBase[parseInt(lizardBase.length * Math.random())];
     }
