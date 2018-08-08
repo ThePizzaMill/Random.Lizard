@@ -10,6 +10,6 @@ if (true) {
 	console.log("lizardBase fetch :  Fetching element " + randInt + "  :  Element retrieved?");
 	var imageLocale = lizardBase[randInt];
 	console.log(imageLocale);
-	//console.log(document.getElementById("lizhard").getAttribute("src"));
-	document.getElementById("lizhard").setAttribute("src",imageLocale);
+	console.log(document.getElementById("lizhard").src);
+	document.getElementById("lizhard").src = imageLocale;
     }
