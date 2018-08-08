@@ -9,5 +9,5 @@ if (true) {
 	var imageLocale = lizardBase[randInt];
 	console.log(imageLocale);
 	console.log(document.getElementById("lizhard").getAttribute("src"));
-	document.getElementById("lizhard").getAttribute("src") = imageLocale;
+	document.getElementById("lizhard").setAttribute("src",imageLocale);
     }
