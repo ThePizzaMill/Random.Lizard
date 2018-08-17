@@ -25,5 +25,5 @@ xmlhttp.onreadystatechange = function () {
     }
 };
 
-xmlhttp.open("GET", "lizards.json", true);
+xmlhttp.open("GET", "https://thepizzamill.github.io/lizards.json", true);
 xmlhttp.send();
