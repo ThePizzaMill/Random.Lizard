@@ -12,7 +12,7 @@ xmlhttp.onreadystatechange = function () {
         
         console.log("lizardBase length :  Should be 2 : Is " + lizardBase.length);
         
-        var randInt = parseInt(lizardBase.length * Math.random());
+        var randInt = parseInt(Math.random(lizardBase.length));
         
         console.log("lizardBase fetch :  Fetching element " + randInt + "  :  Element retrieved?");
         
@@ -25,5 +25,5 @@ xmlhttp.onreadystatechange = function () {
     }
 };
 
-xmlhttp.open("GET", "https://thepizzamill.github.io/lizards.json", true);
+xmlhttp.open("GET", animalLocation, true);
 xmlhttp.send();
