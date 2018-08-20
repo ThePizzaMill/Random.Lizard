@@ -8,15 +8,17 @@ var xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-        var lizardBase = JSON.parse(this.responseText);
+        var lizardBase = JSON.parse(this.responseText).urls;
         
-        console.log("lizardBase length :  Should be 2 : Is " + lizardBase.length);
+        var length = lizardBase.length;
         
-        var randInt = parseInt(Math.random(lizardBase.length));
+        console.log("lizardBase length :  Should be 2 : Is " + length);
+        
+        var randInt = parseInt(Math.random(length));
         
         console.log("lizardBase fetch :  Fetching element " + randInt + "  :  Element retrieved?");
         
-        var imageLocale = lizardBase.urls[randInt];
+        var imageLocale = lizardBase[randInt];
         
         console.log(imageLocale);
         console.log(document.getElementById("lizhard").src);
