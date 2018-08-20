@@ -10,11 +10,16 @@ xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         var lizardBase = JSON.parse(this.responseText).urls;
         
+        var x;
+        for (x in lizardBase) {
+            console.log("LOGGED:  " + x);
+        }
+        
         var length = lizardBase.length;
         
         console.log("lizardBase length :  Should be 2 : Is " + length);
         
-        var randInt = parseInt(Math.random(length));
+        var randInt = parseInt(randInt * Math.random());
         
         console.log("lizardBase fetch :  Fetching element " + randInt + "  :  Element retrieved?");
         
