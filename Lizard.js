@@ -12,14 +12,14 @@ xmlhttp.onreadystatechange = function () {
         
         var x;
         for (x in lizardBase) {
-            console.log("LOGGED:  " + x);
+            console.log("LOGGED:  " + lizardBase[x]);
         }
         
         var length = lizardBase.length;
         
         console.log("lizardBase length :  Should be 2 : Is " + length);
         
-        var randInt = parseInt(randInt * Math.random());
+        var randInt = parseInt(length * Math.random());
         
         console.log("lizardBase fetch :  Fetching element " + randInt + "  :  Element retrieved?");
         
