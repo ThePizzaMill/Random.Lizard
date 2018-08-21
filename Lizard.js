@@ -28,8 +28,11 @@ xmlhttp.onreadystatechange = function () {
       //  console.log(imageLocale);
       //  console.log(document.getElementById("lizhard").src);
         
-        document.getElementById("lizhard").src = imageLocale;
-        document.getElementById("lizhook").innerHTML = imageLocale;
+        if (document.getElementsByTagName("title").innerHTML == "Random Lizard") {
+            document.getElementById("lizhard").src = imageLocale;
+        } else {
+            document.getElementById("lizhook").innerHTML = imageLocale;
+        }
     }
 };
 
