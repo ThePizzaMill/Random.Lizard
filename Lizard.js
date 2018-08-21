@@ -29,6 +29,7 @@ xmlhttp.onreadystatechange = function () {
       //  console.log(document.getElementById("lizhard").src);
         
         document.getElementById("lizhard").src = imageLocale;
+        document.getElementById("lizhook").innerHTML = imageLocale;
     }
 };
 
