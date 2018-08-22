@@ -28,9 +28,9 @@ xmlhttp.onreadystatechange = function () {
       //  console.log(imageLocale);
       //  console.log(document.getElementById("lizhard").src);
         
-        if (document.getElementsByTagName("title").innerHTML == "Random Lizard") {
+        try {
             document.getElementById("lizhard").src = imageLocale;
-        } else {
+        } catch (err) {
             document.getElementById("lizhook").innerHTML = imageLocale;
         }
     }
