@@ -2,6 +2,10 @@
 <html lang="en-US">
 
 <head>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124476826-1"></script>
     <script>
@@ -18,31 +22,53 @@
 	<meta name="description" content="Hello World, This Is Randomal">
 	<meta name="author" content="thepizzamill">
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="w3-bar w3-dark-grey w3-mobile">
+    <nav class="w3-bar w3-black w3-mobile">
+        <a href="#" class="w3-bar-item w3-button w3-yellow" >Home</a>
+        
         <div class="w3-dropdown-hover w3-center">
-            <button class="w3-button">Lizards</button>
+            <button class="w3-button w3-hover-yellow" >Lizards</button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a href="RandomLizard.html" class="w3-bar-item w3-button">Random Lizard</a>
-                <a href="LizardHook.html" class="w3-bar-item w3-button">Lizard Hook</a>
+                <a href="RandomLizard.html" class="w3-bar-item w3-button w3-hover-yellow">Random Lizard</a>
+                <a href="LizardHook.html" class="w3-bar-item w3-button w3-hover-yellow">Lizard Hook</a>
             </div>
         </div>
-    </header>
+        
+        <div class="w3-dropdown-hover w3-center">
+            <button class="w3-button w3-hover-yellow" >Cats</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="RandomCat.html" class="w3-bar-item w3-button w3-hover-yellow">Random Cat</a>
+                <a href="CatHook.html" class="w3-bar-item w3-button w3-hover-yellow">Cat Hook</a>
+            </div>
+        </div>
+        
+        <div class="w3-dropdown-hover w3-center">
+            <button class="w3-button w3-hover-yellow" >Dogs</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="RandomDog.html" class="w3-bar-item w3-button w3-hover-yellow">Random Dog</a>
+                <a href="DogHook.html" class="w3-bar-item w3-button w3-hover-yellow">Dog Hook</a>
+            </div>
+        </div>
+    </nav>
     
     <!-- Introduction -->
-    <article class="w3-center w3-container w3-mobile">
+    <section class="w3-center w3-container w3-mobile">
         <h1>Hello World, this is Randomal</h1>
-        <p>Randomal is hosted by Github Pages. Developed by thepizzamill.</p>
         
-        <br/>
+        <p>Anyone is welcome to send pictures of any animal, even if it is not listed as an animal above.</p>
         
-        <p>Randomal is a collection of animal pictures sent to <a href="random-animal@googlegroups.com">random-animal@googlegroups.com</a>. The design is based off of the sites <a href="https://random.dog/">random.dog</a> and <a href="https://random.cat/">random.cat</a>. All images are subject to approval. </p>
-    </article>
+        <p>Randomal is a collection of animal pictures sent to <a href="mailto:random-animal@googlegroups.com?subject=Here%20is%20a%20new%20%20INSERT%20ANIMAL%20SPECIES%20HERE" target="_blank">random-animal@googlegroups.com</a>.</p>
+    </section>
 	
+    <footer class="w3-center w3-bottom">
+        <p>The design is based off of the sites <a href="https://random.dog/">random.dog</a> and <a href="https://random.cat/">random.cat</a>. All images are subject to approval. </p>
+        <p>Randomal is hosted by <a href="https://pages.github.com/">Github Pages</a>. Developed by <a href="https://github.com/ThePizzaMill">thepizzamill</a>.</p>
+    </footer>
     <!-- Introduction end -->
 
 </body>
